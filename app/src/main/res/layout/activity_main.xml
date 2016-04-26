@@ -7,16 +7,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ice_pbru.khamhor.sirikwan.ice_database.MainActivity">
+    tools:context="ice_pbru.khamhor.sirikwan.ice_database.MainActivity"
+    android:background="@drawable/bgb">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SING UP"
+        android:text="SIGN UP"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="false"
-        android:textSize="45dp" />
+        android:textSize="@dimen/H1"
+        android:nestedScrollingEnabled="false"
+        android:onClick="clickRegis"
+        android:background="#c8ed65bf" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,6 +29,7 @@
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="false"
-        android:textSize="45dp"
-        android:layout_alignParentRight="true" />
+        android:textSize="@dimen/H1"
+        android:layout_alignParentRight="true"
+        android:background="#c8ed65bf" />
 </RelativeLayout>
