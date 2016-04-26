@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ice_pbru.khamhor.sirikwan.ice_database.MainActivity"
-    android:background="@drawable/bgb">
+    android:background="@drawable/bg3">
 
     <Button
         android:layout_width="wrap_content"
