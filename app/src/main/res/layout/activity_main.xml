@@ -31,5 +31,6 @@
         android:layout_alignParentLeft="false"
         android:textSize="@dimen/H1"
         android:layout_alignParentRight="true"
-        android:background="#c8ed65bf" />
+        android:background="#c8ed65bf"
+        android:onClick="testMyAlert" />
 </RelativeLayout>
