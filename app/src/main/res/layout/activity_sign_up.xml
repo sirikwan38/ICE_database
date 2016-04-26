@@ -23,7 +23,7 @@
             android:textSize="@dimen/H1"
             android:gravity="center_horizontal"
             android:phoneNumber="true"
-            android:background="#c8f97dcf"
+            android:background="#c8f584cf"
             android:textStyle="bold" />
 
         <LinearLayout
