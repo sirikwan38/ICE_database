@@ -9,8 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ice_pbru.khamhor.sirikwan.ice_database.MainActivity">
 
-    <TextView
-        android:layout_width="fill_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="SING UP"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:textSize="45dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:textSize="45dp"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>
