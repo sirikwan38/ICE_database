@@ -32,7 +32,7 @@
         android:textSize="@dimen/H1"
         android:layout_alignParentRight="true"
         android:background="#94f8bee4"
-        android:onClick="testMyAlert" />
+        android:onClick="clickIn" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -42,7 +42,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="250dp"
-        android:background="#7cf5aae6">
+        android:background="#ddf5aae6">
 
         <ImageView
             android:layout_width="300dp"
@@ -50,7 +50,7 @@
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
             android:layout_margin="20dp"
-            android:src="@drawable/ic2" />
+            android:src="@drawable/ic3" />
 
         <EditText
             android:layout_width="match_parent"
