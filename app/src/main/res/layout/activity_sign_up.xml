@@ -154,5 +154,5 @@
         android:textSize="@dimen/H1"
         android:background="#94f8bee4"
         android:layout_alignParentRight="true"
-        android:onClick="clickIn" />
+        android:onClick="clickSignUp" />
 </RelativeLayout>
