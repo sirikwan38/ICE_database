@@ -42,7 +42,8 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="250dp"
-        android:background="#96f5aae6">
+        android:background="#85f5aae6"
+        android:baselineAligned="false">
 
         <ImageView
             android:layout_width="300dp"
