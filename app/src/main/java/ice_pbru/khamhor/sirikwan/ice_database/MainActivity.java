@@ -1,6 +1,7 @@
 package ice_pbru.khamhor.sirikwan.ice_database;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -102,10 +103,47 @@ public class MainActivity extends AppCompatActivity {
 
         if (checkSpace()) {
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this,"มีช่องว่าง","กรุณาตรวจสอบข้อมูล");
+            myAlert.myDialog(this, "มีช่องว่าง", "กรุณาตรวจสอบข้อมูล");
+
+        } else {
+            //no space
+
+            checkUserAndPassword();
 
         }
-    }
+    }//click signin
+
+    private void checkUserAndPassword() {
+        try {
+            SQLiteDatabase sqliteDatabase = openOrCreateDatabase(MyOpenHelper.database_name, MODE_PRIVATE, null);
+            Cursor cursor = sqliteDatabase.rawQuery("SELECT * FROM userTABLE WHERE User = +" +
+                    "'" + userString + "'", null);
+            cursor.moveToFirst();
+
+            String[] resultStrings = new String[cursor.getColumnCount()];
+            for (int i = 0; i < cursor.getColumnCount(); i++) {
+                resultStrings[i] = cursor.getString(i);
+            }
+            cursor.close();
+            //check password
+            if (passwordString.equals(resultStrings[4])) {
+                Toast.makeText(this, "ยินดีต้อนรับ" + resultStrings[1], Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, LoginSuscess.class);
+                intent.putExtra("Result", resultStrings);
+                startActivity(intent);
+                finish();
+
+            } else {
+                MyAlert myAlert = new MyAlert();
+                myAlert.myDialog(this,"Wrong password", "กรุณากรอกรหัสผ่านอีกครั้ง");
+            }
+
+        } catch (Exception e) {
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this,"User error", "ไม่มีชื่อผู้ใช้งานในฐานข้อมูล");
+
+        }
+    }//check user and password
 
     private boolean checkSpace() {
         return
