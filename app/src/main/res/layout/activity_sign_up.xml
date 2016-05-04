@@ -117,7 +117,7 @@
                     android:ems="10"
                     android:id="@+id/editText4"
                     android:textSize="@dimen/H2"
-                    android:inputType="numberPassword" />
+                    android:inputType="numberPassword|textPassword" />
             </LinearLayout>
 
             <LinearLayout
@@ -138,7 +138,7 @@
                     android:ems="10"
                     android:id="@+id/editText5"
                     android:textSize="@dimen/H2"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress|textPassword" />
             </LinearLayout>
 
         </LinearLayout>

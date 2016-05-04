@@ -37,7 +37,7 @@ public class SignUp extends AppCompatActivity {
         nameString = nameEditText.getText().toString().trim();
         surnameString = surnameEditText.getText().toString().trim();
         userString = userEditText.getText().toString().trim();
-        passwordString = emailEditText.getText().toString().trim();
+        passwordString = passwordEditText.getText().toString().trim();
         emailString = emailEditText.getText().toString().trim();
 
         if (checkSpace()) {
