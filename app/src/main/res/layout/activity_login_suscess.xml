@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ice_pbru.khamhor.sirikwan.ice_database.LoginSuscess">
+    tools:context="ice_pbru.khamhor.sirikwan.ice_database.LoginSuscess"
+    android:contextClickable="false"
+    android:background="@drawable/bg3">
 
     <LinearLayout
         android:orientation="vertical"
