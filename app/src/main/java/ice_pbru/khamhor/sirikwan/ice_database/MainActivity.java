@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
                     String strPassword = jsonObject.getString(MySQLite.colum_Password);
                     String strEmail = jsonObject.getString(MySQLite.colum_Email);
 
+
+
                     mySQLite.addNewUser(strName, strSurname, strUser, strPassword, strEmail);
 
                     Log.d("Sirikwan -->", "Name = " + strName.toString());
